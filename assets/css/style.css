@@ -15,7 +15,7 @@ a{
 
 
 
-h1, h2, h3, h4, h5, h6, body{
+h1, h2, h3, h4, h5, h6, body, textarea, input{
     font-family: "Roboto", serif;
     color: #474747;
 }
@@ -227,14 +227,16 @@ nav {
 .skill-wrapper{
     display: flex;
     gap: 40px;
+    
 
 }
 .technical-skill{
     width: 50%;
 }
 
-.technical-skill h2 {
+.technical-skill h2, .professional-skill h2 {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .skill-info {
@@ -335,10 +337,11 @@ nav {
 .single-contact{
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding: 20px;
+    margin-bottom: 15px;
+    gap: 50px;
+    padding: 20px 40px;
     background: white;
-    box-shadow: 0 0 10px #33333312;
+    box-shadow: 0 0 20px #33333346;
 }
 .contact-icon{
     width: 100px;
@@ -350,8 +353,39 @@ nav {
     align-items: center;
 }
 .contact-icon i{
-    font-size: 30px;
+    font-size: 20px;
 
+}
+.contact-info h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.contact-info p{
+    line-height: 30px;
+}
+
+
+
+.contact-form input, textarea {
+    width: 500px;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #dad3d3;
+    background: transparent;
+}
+
+.contact-form textarea {
+    height: 160px;
+    padding: 20px ;
+}
+
+input[type="submit"] {
+    background: #00fad7;
+    border-radius: 50px;
 }
 
 
